@@ -379,8 +379,8 @@ section{
 .membership-offer-content{background-color: rgba(177, 127, 10, 0.8);width: 550px;max-width:100%;
     padding: 30px;
     color: #fff;
-
 }
+.membership-offer-content .heading-s2:before{background-color: var(--bs-white);}
   /***************************book-a-deal****************************************/
  .book-a-deal{background-image:url(../img/book-a-deal.jpg);background-size: cover;
     background-repeat: no-repeat;
