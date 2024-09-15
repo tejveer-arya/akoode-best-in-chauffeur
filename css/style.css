@@ -403,7 +403,7 @@ box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.5);}
           transform: translateX(-3px); 
         }
       }
-/***************************brand-scroll****************************************/
+/***************************partner-logo****************************************/
 .partners-logo .brand-scroll{padding: 0;background-color: var(--bs-darkgray);}
 .partners-logo .brand-scroll h4{font-size: 1.938em;
     font-weight: 500;
@@ -418,9 +418,18 @@ box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.5);}
 footer{background:url(../img/footer-image.jpg)center center no-repeat;background-size:cover;position:relative;padding:5rem 0;margin:5rem 0}
 footer:before{position: absolute;content:'';top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.9)}
 .footer img{position: relative}
+.footer div[class*='col-xl-5'] .footer-listing ul{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+}
+.footer div[class*='col-xl-5'] .footer-listing ul li{ 
+  width: 48%; 
+}
 .footer-listing h5{font-size:24px;color: var(--bs-white);position: relative;}
 .footer ul{list-style:none;padding:0;margin:0}
 .footer ul li a{color: var(--bs-white);text-transform: uppercase;padding: 5px 0;display:block;position: relative;text-decoration: none;font-size: 15px;}
+.footer ul li a[href^="mailto"]{text-transform: lowercase;}
 .footer ul li a:hover, .footer ul li a:focus{color: var(--bs-fadegold);}
 hr{border-style: dashed;border-width: 0px 0px 1px 0px;margin: 3rem 0;border-color: var(--bs-white);transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}
 .footer-bottom{display: flex;justify-content: space-between;gap:200px;}
