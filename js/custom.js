@@ -12,30 +12,26 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 $(document).ready(function() {
   $(".portfolio-cards").slick({
-      // slidesToShow: 4,
-      // slidesToScroll: 1,
       dots: false,
       arrows: false,
       infinite: true,
-      // centerMode: true,
       variableWidth: true,
       autoplay: true,
       autoplaySpeed: 0,
       speed: 4000,
       cssEase: "linear",
-      // waitForAnimate: false,
-      // pauseOnFocus: false,
       pauseOnHover: true,
   });
   
 
-  $(".portfolio-cards").on("mouseenter", function() {
+  $(".portfolio-cards").on("mouseenter", function () {
     $(this).slick("slickSetOption", "autoplay", false, true); 
+    $(this).slick("slickSetOption", "speed", 0, true); 
   });
-
-
-  $(".portfolio-cards").on("mouseleave", function() {
+  
+  $(".portfolio-cards").on("mouseleave", function () {
     $(this).slick("slickSetOption", "autoplay", true, true); 
+    $(this).slick("slickSetOption", "speed", 4000, true); 
     $(this).slick("slickPlay"); 
   });
 
