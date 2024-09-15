@@ -476,6 +476,7 @@ hr{border-style: dashed;border-width: 0px 0px 1px 0px;margin: 3rem 0;border-colo
   .container-fluid {
     padding: 0 4rem;
   }
+  .video-content{left:48px}
   .membership-offer {
     padding: 12rem 4rem 12rem 0rem;
 }
