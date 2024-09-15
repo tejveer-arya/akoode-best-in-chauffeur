@@ -1,10 +1,6 @@
 :root {
     --bs-white: #fff;
     --bs-black: #000000;
-    --bs-icons: #957E78;
-    --bs-gray: #555555;
-    --bs-midgray: #464646;
-    --bs-richgray: #585858;
     --bs-fadegold: #b17f0a;
 }
 
@@ -12,9 +8,6 @@
 .navbar {
     --bs-navbar-nav-link-padding-x: 1rem;
 }
-
-
-
 
 body {
     font-family: "Lato", sans-serif;
@@ -25,8 +18,9 @@ body, html {
     height: 100%;
 }
 h1,h2,h3,h4,h5,h6{
-  font-family: "Playfair", serif;
-  text-transform: uppercase;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  text-transform: capitalize;
   margin: 0;
 }
 
@@ -45,15 +39,19 @@ a {
     padding: 0 5rem;
 }
 .heading-s2 {
-    font-size: 52px;
+    font-size: 45px;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
+    position: relative;
+    margin-bottom: 28px;
+    padding-bottom: 15px;
   }
+  .heading-s2:before{position: absolute;content:'';width:70px;height: 1px;background-color: var(--bs-black);left: 0;right: auto;bottom: 4px;}
 /*****************************header********************************************/
 #header{
     position: fixed;
-    height: 111px;
+    height: 91px;
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     z-index: 1;
     width: 100%;
@@ -73,7 +71,7 @@ a {
     font-weight: 400;
     text-transform: capitalize;
     padding: 0 var(--bs-navbar-nav-link-padding-x);
-    font-size: 14px;
+    font-size: 15px;
 }
 #header.fixed .navbar-nav .nav-item .nav-link{font-size: 14px;}
 #header .navbar-nav .nav-item .nav-link:hover, #header .navbar-nav .nav-item .nav-link:focus{color:var(--bs-fadegold)}
@@ -81,7 +79,7 @@ a {
 #header .navbar {
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-#header:before {
+/* #header:before {
     position: absolute;
     content: '';
     top: 0;
@@ -92,7 +90,7 @@ a {
     background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-}
+} */
 #header.fixed:before{display: none;}
 #header .navbar .navbar-brand img{width: 260px;-webkit-transition: all 0.5s ease 0s;-moz-transition: all 0.5s ease 0s;-ms-transition: all 0.5s ease 0s;transition: all 0.5s ease 0s;}
 #header.fixed .navbar .navbar-brand img{width:210px}
@@ -171,7 +169,7 @@ a {
 
 /*****************************first-section********************************************/
 section{
-    padding: 5rem 0;
+    padding: 4rem 0;
 }
 .section {
     height: 100vh;
@@ -199,7 +197,7 @@ section{
 .video-content {
     position: absolute;
     top:auto;
-    left: 30px;
+    left: 60px;
     right: auto;
     bottom:30px;
     color: white;
@@ -219,20 +217,21 @@ section{
     text-transform: uppercase;
   }
   .video-content a{height: 15px;display: block;}
-  .video-content a svg{color: var(--bs-white);font-size: 0.938rem;vertical-align: top;}
+  .video-content a svg{color: var(--bs-white);font-size: 1.2rem;vertical-align: top;}
   /***************************carousel-slider****************************************/
-  section+ .about-us{padding-top: 10rem;}
+  section+ .about-us{padding-top: 8rem;}
+  .about-us p{font-size: 15px;}
   .about-us .carousel-indicators [data-bs-target] {width:12px;height: 12px;background-color: var(--bs-white);border-radius: 100%;}
   .about-us .carousel-indicators.active{opacity:1;}
 .image-slider-content{background-color: var(--bs-fadegold);padding: 20px;position: relative;height: 100%;}
 .image-slider-content:before{position: absolute;content:'';background-image:url(../img/triangle.png);right:0;bottom:0;width:75px;height:75px;top:auto;left: auto;}
 .image-slider-content span{font-size:14px;display:inline-block;color:var(--bs-white);padding: 0px 0px 5px 0px;
     border-style: solid;
-    border-width: 0px 0px 3px 0px;
+    border-width: 0px 0px 1px 0px;
     border-color: var(--bs-white);}
-    .image-slider-content h3{font-size: 3rem;color: var(--bs-white);line-height: 107%;padding: 1rem 0;}
+    .image-slider-content h3{font-size: 3rem;color: var(--bs-white);line-height: 110%;padding: 2rem 0 1rem 0;}
     .image-slider-content p{position:absolute;bottom:20px;top:auto;left:20px;right:auto;font-size: 2rem;font-weight: 900;color: var(--bs-white);margin:1.3rem 0 0 0}
-    .image-slider-content ul{list-style: none;padding:0 90px 0 0;margin:0}
+    .image-slider-content ul{list-style: none;padding:20px 90px 0 0;margin:0}
     .image-slider-content ul li a{text-decoration: none;font-size: 16px;color: var(--bs-white);padding: 12px 0;
         display: block;position: relative;border-bottom:1px solid rgba(255, 255, 255, 0.1);text-transform: uppercase;
         font-weight: 300;}
@@ -242,7 +241,7 @@ section{
             height: 1px;
             position: absolute;
             z-index: 1;
-            bottom: 0;
+            bottom: -1px;
             left: 0;
             width: 100%; 
             -webkit-transform: scaleX(0); 
@@ -276,6 +275,27 @@ section{
             transform: translateY(-50%);
         }
         .image-slider-content ul li a:hover span{border:1px solid rgba(255, 255, 255, 1);}
+/***********************************gifts-tours-entertainments**********************/
+.gifts-tours-entertainment .figure{position: relative;overflow: hidden;}
+.gifts-tours-entertainment .figure .figure-img{-webkit-transition: -webkit-transform 0.4s ease-in-out, -webkit-filter 0.4s ease-in-out;
+  -moz-transition: -moz-transform 0.4s ease-in-out, -moz-filter 0.4s ease-in-out;
+  -o-transition: -o-transform 0.4s ease-in-out, -o-filter 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;}
+  .gifts-tours-entertainment .figure .figure-img:hover {
+  -webkit-transform: scale(1.15) rotate(2deg);
+  -moz-transform: scale(1.15) rotate(2deg);
+  -o-transform: scale(1.15) rotate(2deg);
+  transform: scale(1.15) rotate(2deg);
+
+  -webkit-filter: brightness(1.1) saturate(1.2);
+  -moz-filter: brightness(1.1) saturate(1.2);
+  -o-filter: brightness(1.1) saturate(1.2);
+  filter: brightness(1.1) saturate(1.2);
+}
+.gifts-tours-entertainment .figure .figure-caption{position: absolute;background-color: rgba(0, 0, 0, 0.7);padding: 10px;right:0;bottom:0;top:auto;left:20px}
+.gifts-tours-entertainment .figure .figure-caption{color: var(--bs-white);}
+.gifts-tours-entertainment .figure .figure-caption p{font-size: 15px; color: var(--bs-white);margin-bottom:0.5rem;padding: 0.5rem 0rem;}
+.gifts-tours-entertainment .button-click .btn-primary{padding: 0.5rem 1rem;}
 
 /***************************portfolio cards****************************************/
         .portfolio-cards .card {
@@ -351,7 +371,7 @@ section{
             transform: rotate(-45deg);
           }
 /***************************membership-offer****************************************/
-.membership-offer{background: url(../img/membership-offer.jpg) top center no-repeat;margin:5rem 0;padding: 15rem 5rem 15rem 0rem;}
+.membership-offer{background: url(../img/membership-offer.jpg) top center no-repeat;margin:4rem 0;padding: 15rem 5rem 15rem 0rem;}
 .membership-offer ul{list-style: none;padding: 0;margin: 0;}
 .membership-offer ul li{padding: 5px 0;font-size: 15px;}
 .membership-offer ul li span{padding-right: 15px;}
@@ -367,7 +387,7 @@ section{
     background-position: center center;
     background-attachment: fixed;
     text-align: center;
-    margin: 5rem 0;
+    margin: 4rem 0;
 position: relative;}
 .book-a-deal h3{font-size: 2.5rem;}
 .book-a-deal:before{position: absolute;content:'';top: 0;bottom:0;left:0;right:0;background-color: rgba(177, 127, 10, 0.8);}
@@ -415,7 +435,7 @@ box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.5);}
     .partners-logo .brand-scroll img{width: 105px;}
 
 /*********************************footer*********************************************/
-footer{background:url(../img/footer-image.jpg)center center no-repeat;background-size:cover;position:relative;padding:5rem 0;margin:5rem 0}
+footer{background:url(../img/footer-image.jpg)center center no-repeat;background-size:cover;position:relative;padding:4rem 0;margin:4rem 0}
 footer:before{position: absolute;content:'';top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.9)}
 .footer img{position: relative}
 .footer div[class*='col-xl-5'] .footer-listing ul{
@@ -426,7 +446,7 @@ footer:before{position: absolute;content:'';top:0;left:0;right:0;bottom:0;backgr
 .footer div[class*='col-xl-5'] .footer-listing ul li{ 
   width: 48%; 
 }
-.footer-listing h5{font-size:24px;color: var(--bs-white);position: relative;}
+.footer-listing h5{font-size:24px;color: var(--bs-fadegold);position: relative;}
 .footer ul{list-style:none;padding:0;margin:0}
 .footer ul li a{color: var(--bs-white);text-transform: uppercase;padding: 5px 0;display:block;position: relative;text-decoration: none;font-size: 15px;}
 .footer ul li a[href^="mailto"]{text-transform: lowercase;}
@@ -441,6 +461,16 @@ hr{border-style: dashed;border-width: 0px 0px 1px 0px;margin: 3rem 0;border-colo
 .footer-bottom .follow-us li a{padding: 0 10px;display: inline-block;}
 .footer-bottom .follow-us li:first-child a{padding-left: 0px;}
 /**************************responsive screen*******************************/
+@media all and (min-width: 1680px) {
+  .heading-s2{
+    font-size: 52px;
+  }
+}
+@media all and (min-width: 1400px) {
+  .container-fluid {
+    padding: 0 4rem;
+  }
+}
 @media(max-width:1600px) {
     html {
         font-size: 12px;
@@ -450,17 +480,21 @@ hr{border-style: dashed;border-width: 0px 0px 1px 0px;margin: 3rem 0;border-colo
     html {
         font-size: 10px;
     }
+    .image-slider-content h3{padding:1rem 0 1rem 0}
+    .image-slider-content ul{
+      padding: 0px 90px 0 0;
+    }
 }
 @media(max-width:1199px) {
     .image-slider-content p{position: static;}
 }
 @media only screen and (max-width: 768px) {
     .heading-s2 {
-        font-size: 42px;
+        font-size: 28px;
       }
 }
 @media only screen and (max-width: 425px) {
     .heading-s2 {
-        font-size: 32px;
+        font-size: 36px;
       }
 }
