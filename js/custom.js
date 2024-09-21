@@ -1,15 +1,10 @@
-document.addEventListener('DOMContentLoaded', function () {
-  var header = document.getElementById('header');
-  function checkScroll() {
-    if (window.scrollY > 0) {
-      header.classList.add('fixed');
-    } else {
-      header.classList.remove('fixed');
-    }
-  }
-  checkScroll();
-  window.addEventListener('scroll', checkScroll);
-});
+$(window).scroll(function () {
+        if ($(window).scrollTop() > 76) {
+          $("header").addClass("fixed");
+        } else {
+          $("header").removeClass("fixed");
+        }
+      });
 $(document).ready(function() {
   $(".portfolio-cards").slick({
       dots: false,
