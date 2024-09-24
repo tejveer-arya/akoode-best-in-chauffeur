@@ -32,7 +32,7 @@ $(document).ready(function() {
 
 
   $("#ticker").webTicker({
-    height: "100px",
+    height: "180px",
     duplicate: true,
     rssfrequency: 0,
     startEmpty: false,
