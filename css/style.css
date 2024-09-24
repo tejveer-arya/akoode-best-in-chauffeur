@@ -472,7 +472,7 @@ box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.5);}
 
 /*********************************footer*********************************************/
 footer{background:url(../img/footer-image.jpg)center center no-repeat;background-size:cover;position:relative;padding:4rem 0;margin:4rem 0}
-.footer-image p{color: var(--bs-white);position: relative;font-size: 14px;padding-right: 20px;}
+.footer-image p{color: var(--bs-white);position: relative;font-size: 15px;padding-right: 20px;}
 footer:before{position: absolute;content:'';top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.9)}
 .footer img{position: relative}
 .footer div[class*='col-xl-5'] .footer-listing ul{
