@@ -41,9 +41,7 @@ $(document).ready(function() {
   });
 })
 
-window.addEventListener("resize", function() {
-  "use strict"; window.location.reload(); 
-});
+
 document.addEventListener("DOMContentLoaded", function()
 {
 /////// Prevent closing from click inside dropdown
