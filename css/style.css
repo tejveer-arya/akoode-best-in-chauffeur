@@ -488,7 +488,7 @@ footer:before{position: absolute;content:'';top:0;left:0;right:0;bottom:0;backgr
 .footer-listing .follow-us li a{padding: 0 10px;display: inline-block;}
 .footer-listing .follow-us li:first-child a{padding-left: 0px;}
 .footer ul{list-style:none;padding:0;margin:0}
-.footer ul li a{color: var(--bs-white);text-transform: uppercase;padding: 5px 0;display:block;position: relative;text-decoration: none;font-size: 15px;}
+.footer ul li a{color: var(--bs-white);text-transform: capitalize;padding: 5px 0;display:block;position: relative;text-decoration: none;font-size: 15px;}
 .footer ul li a[href^="mailto"]{text-transform: lowercase;}
 .footer ul li a:hover, .footer ul li a:focus{color: var(--bs-fadegold);}
 hr{border-style: dashed;border-width: 0px 0px 1px 0px;margin: 3rem 0;border-color: var(--bs-white);transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}
