@@ -214,7 +214,7 @@ section{
     color: white;
     width: 650px;
     max-width: 100%;
-    z-index: 1; 
+    z-index: 0; 
   }
   .video-content h1{font-size:4.75rem}
   .video-content p{
@@ -231,13 +231,14 @@ section{
   .video-content a svg{color: var(--bs-white);font-size: 1.2rem;vertical-align: top;}
   /***************************carousel-slider****************************************/
   section+ .gifts-tours-entertainment{padding-top: 8rem;}
+  section+ .lifestyle-management-services.gifts-tours-entertainment{padding-top: 4rem;}
   .about-us p, .gifts-tours-entertainment p{font-size: 15px;margin-bottom: 32px;}
   .about-us .carousel-indicators [data-bs-target] {width:12px;height: 12px;background-color: var(--bs-white);border-radius: 100%;}
   .about-us .carousel-indicators.active{opacity:1;}
   .about-us .carousel .carousel-item p{position: absolute;right: 0;left: auto;background-color: rgba(0, 0, 0, 0.8);color: var(--bs-white);padding: 15px 20px;margin: 0;bottom: 0;}
 .image-slider-content{background-color: rgba(177, 127, 10, 0.8);;padding: 20px;position: relative;height: 100%;}
 .image-slider-content:before{position: absolute;content:'';background-image:url(../img/triangle.png);right:0;bottom:0;width:75px;height:75px;top:auto;left: auto;}
-.image-slider-content span{font-size:14px;display:inline-block;color:var(--bs-white);padding: 0px 0px 5px 0px;
+.image-slider-content span{font-size:15px;display:inline-block;color:var(--bs-white);padding: 0px 0px 5px 0px;
     border-style: solid;
     border-width: 0px 0px 1px 0px;
     border-color: var(--bs-white);}
@@ -528,6 +529,11 @@ hr{border-style: dashed;border-width: 0px 0px 1px 0px;margin: 3rem 0;border-colo
     }
 }
 @media(max-width:1199px) {
+  header .button-click{position: fixed;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    right: -20px;
+    left: auto;}
     .image-slider-content p{position: static;padding: 0 90px 0 0;}
     .gifts-tours-entertainment .figure{margin: 0 0 3rem 0;}
     .gifts-tours-entertainment .row div[class*='col-']:last-child .figure{margin: 0;}
@@ -567,11 +573,18 @@ section+ .gifts-tours-entertainment{padding-top: 0rem;}
 }
 @media (max-width: 991px) {
   #header .navbar .container-fluid{gap: 8px;}
-  #header .navbar .navbar-collapse{background-color: var(--bs-black);}
+  #header .navbar .navbar-collapse{background-color: var(--bs-black);position: relative;z-index: 1}
+  #header .navbar-nav .nav-item .nav-link{padding: 1rem;}
 .footer-bottom{
   flex-direction: column;
   gap: 20px;
 }
+#header .navbar-brand+ .d-flex{position: absolute;top: 3px;right: 3px;}
+header .button-click{position: fixed;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  right: -20px;
+  left: auto;}
 }
 @media only screen and (max-width: 768px) {
     .heading-s2 {
@@ -594,8 +607,12 @@ section+ .gifts-tours-entertainment{padding-top: 0rem;}
     #background-video {
         height: auto;
     }
+
 }
 @media (max-width: 575px) {
+  #header{
+    height:75px
+  }
   .container-fluid {
     padding: 0 1rem;
 }
@@ -611,9 +628,12 @@ section+ .gifts-tours-entertainment{padding-top: 0rem;}
 .membership-offer {
   padding: 12rem 1rem 12rem 1rem;
 }
+.membership-box{flex-direction: column;}
+#header .navbar .navbar-brand img{width: 200px;}
 }
 @media only screen and (max-width: 425px) {
     .heading-s2 {
         font-size: 36px;
       }
+    .flags ul li img{width:28px}
 }
